@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+/* ========================
+   THEME VARIABLES
+======================== */
+:root {
+  --background: #ffffff;
+  --foreground: #0f172a; /* slate-900 */
+  --muted: #64748b; /* slate-500 */
+  --border: #e5e7eb;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #020617; /* dark slate */
+    --foreground: #f8fafc;
+    --muted: #94a3b8;
+    --border: #1e293b;
+  }
+}
+
+/* ========================
+   BASE STYLES
+======================== */
+* {
+  @apply box-border;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-[var(--background)] text-[var(--foreground)] antialiased;
+  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+}
+
+/* ========================
+   TYPOGRAPHY
+======================== */
+h1, h2, h3, h4 {
+  @apply font-semibold tracking-tight;
+}
+
+p {
+  @apply text-[var(--muted)];
+}
+
+/* ========================
+   REUSABLE UTILITIES
+======================== */
+.container {
+  @apply max-w-7xl mx-auto px-4;
+}
+
+.section {
+  @apply py-16 md:py-24;
+}
+
+.btn-primary {
+  @apply px-6 py-3 rounded-lg bg-black text-white hover:opacity-90 transition;
+}
+
+.btn-secondary {
+  @apply px-6 py-3 rounded-lg border border-[var(--border)] hover:bg-gray-100 transition;
+}
+
+/* ========================
+   CARD STYLE (used later)
+======================== */
+.card {
+  @apply border border-[var(--border)] rounded-xl p-6 bg-white hover:shadow-lg transition;
+}
+
+/* Dark mode card fix */
+@media (prefers-color-scheme: dark) {
+  .card {
+    @apply bg-[#020617];
+  }
+}
