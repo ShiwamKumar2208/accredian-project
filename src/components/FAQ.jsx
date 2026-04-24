@@ -118,7 +118,7 @@ export default function FAQ() {
 
         {/* CTA */}
         <div className="text-center mt-10">
-          <button className="px-6 py-3 bg-blue-600 text-white font-bold rounded-lg">
+          <button onClick={() => window.dispatchEvent(new Event("open-enquire"))} className="px-6 py-3 bg-blue-600 text-white font-bold rounded-lg">
             Enquire Now
           </button>
         </div>
