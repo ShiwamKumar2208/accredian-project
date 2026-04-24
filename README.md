@@ -2,11 +2,11 @@
 
 ## 🚀 Live Demo
 
-[Add your Vercel link here]
+[Live Demo on Vercel](https://accredian-project.vercel.app/)
 
 ## 📦 Repository
 
-[Add your GitHub repo link here]
+[Accredian Project](https://github.com/ShiwamKumar2208/accredian-project)
 
 ---
 
