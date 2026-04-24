@@ -1,36 +1,105 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Accredian Enterprise Page Clone
 
-## Getting Started
+## 🚀 Live Demo
 
-First, run the development server:
+[Add your Vercel link here]
+
+## 📦 Repository
+
+[Add your GitHub repo link here]
+
+---
+
+## 🧠 Approach
+
+The goal was to recreate the Accredian Enterprise landing page with a focus on clean structure, responsiveness, and component reusability rather than pixel-perfect duplication.
+
+### Key decisions:
+
+* Built using **Next.js (App Router)** for scalability
+* Used **functional components and hooks**
+* Designed **modular reusable components** (Navbar, Hero, Stats, Clients, Features, Testimonials, FAQ, Footer)
+* Focused on **responsive design first**, then refined desktop layout
+* Implemented **smooth scroll navigation with active section tracking**
+
+---
+
+## 🧩 Features Implemented
+
+* Fully responsive landing page (mobile + desktop)
+* Sticky navbar with active section highlight
+* Smooth scrolling navigation
+* Modular reusable components
+* Testimonials slider (button-based navigation)
+* FAQ with tab-based filtering + animated dropdown
+* Enquiry modal (global trigger across components)
+* CTA section with gradient and layered design
+
+---
+
+## 🤖 AI Usage (Important)
+
+AI tools (ChatGPT) were used in the following ways:
+
+### Where AI helped:
+
+* Debugging layout and responsiveness issues
+* Structuring components efficiently
+* Fixing Next.js image warnings and performance issues
+* Improving UI consistency and spacing
+* Implementing scroll-based navigation logic
+
+### What was done manually:
+
+* Component architecture and breakdown
+* UI alignment and spacing adjustments
+* Responsive behavior decisions
+* Debugging integration issues
+* Final UX decisions (modal handling, navbar behavior, etc.)
+
+AI was used as a **development assistant**, not as a direct copy-paste solution.
+
+---
+
+## ⚙️ Setup Instructions
 
 ```bash
+git clone <your-repo-link>
+cd accredian-project
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🌐 Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+* Next.js (App Router)
+* React
+* Tailwind CSS
+* Vercel (Deployment)
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🔧 Improvements (If given more time)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+* Add backend integration for enquiry form (API routes / database)
+* Add animations (Framer Motion)
+* Improve accessibility (ARIA roles, keyboard nav)
+* Optimize images further for performance
+* Add form validation + error handling
+* Add analytics tracking
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## ⭐ Bonus Features
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+* Global enquiry modal system
+* Reusable UI components
+* Clean separation of concerns
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 📌 Notes
+
+This project focuses on **clarity, structure, and usability**, aligning with real-world development practices rather than exact visual cloning.

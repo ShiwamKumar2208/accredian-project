@@ -38,7 +38,7 @@ bg-gradient-to-r from-blue-600 to-blue-500"
           </div>
 
           {/* BUTTON */}
-          <button onClick={openModal} className="relative z-10 bg-white text-blue-600 px-6 py-3 rounded-lg font-medium hover:opacity-90 transition">
+          <button onClick={() => window.dispatchEvent(new Event("open-enquire"))} className="relative z-10 bg-white text-blue-600 px-6 py-3 rounded-lg font-medium hover:opacity-90 transition">
             Contact Us →
           </button>
         </div>

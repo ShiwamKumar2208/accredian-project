@@ -11,15 +11,21 @@ import Testimonials from "../components/Testimonials";
 import CTA from "../components/CTA";
 import Footer from "../components/Footer";
 import EnquireModal from "@/components/EnquireModal";
-import { useState } from "react";
 
 export default function Home() {
   const [open, setOpen] = useState(false);
 
+  useEffect(() => {
+    const handler = () => setOpen(true);
+    window.addEventListener("open-enquire", handler);
+
+    return () => window.removeEventListener("open-enquire", handler);
+  }, []);
+
   return (
     <>
-      <Navbar openModal={() => setOpen(true)} />
-      <Hero openModal={() => setOpen(true)} />
+      <Navbar />
+      <Hero />
       <Stats />
       <Clients />
       <Features />
@@ -28,8 +34,8 @@ export default function Home() {
       <HowItWorks />
       <FAQ />
       <Testimonials />
-      <CTA openModal={() => setOpen(true)} />
-      <Footer openModal={() => setOpen(true)} />
+      <CTA />
+      <Footer />
 
       <EnquireModal open={open} onClose={() => setOpen(false)} />
     </>

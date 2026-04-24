@@ -52,7 +52,7 @@ export default function Hero() {
             </div>
 
             {/* CTA */}
-            <button onClick={openModal} className="mt-8 w-full sm:w-auto px-6 py-3 bg-blue-600 text-white rounded-lg shadow-md hover:opacity-90 transition">
+            <button onClick={() => window.dispatchEvent(new Event("open-enquire"))} className="mt-8 w-full sm:w-auto px-6 py-3 bg-blue-600 text-white rounded-lg shadow-md hover:opacity-90 transition">
               Enquire Now
             </button>
           </div>

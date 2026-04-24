@@ -95,7 +95,7 @@ export default function Navbar() {
         </div>
 
         {/* DESKTOP CTA */}
-        <button className="hidden md:block bg-blue-600 text-white px-4 py-2 rounded-md">
+        <button onClick={() => window.dispatchEvent(new Event("open-enquire"))} className="hidden md:block bg-blue-600 text-white px-4 py-2 rounded-md">
           Enquire Now
         </button>
 

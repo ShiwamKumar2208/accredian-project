@@ -37,7 +37,7 @@ export default function Footer() {
 
             {/* CTA */}
             <div className="text-right">
-              <button onClick={openModal} className="bg-blue-600 text-white px-5 py-2 rounded-md">
+              <button onClick={() => window.dispatchEvent(new Event("open-enquire"))} className="bg-blue-600 text-white px-5 py-2 rounded-md">
                 Enquire Now
               </button>
               <p className="text-sm text-gray-500 mt-2">
@@ -110,7 +110,7 @@ export default function Footer() {
           </div>
 
           {/* CTA */}
-          <button onClick={openModal} className="bg-blue-600 text-white px-5 py-2 mt-10 rounded-md mb-2">
+          <button onClick={() => window.dispatchEvent(new Event("open-enquire"))} className="bg-blue-600 text-white px-5 py-2 mt-10 rounded-md mb-2">
             Enquire Now
           </button>
           <p className="text-sm text-gray-300 mb-6">Speak with our Advisor</p>
