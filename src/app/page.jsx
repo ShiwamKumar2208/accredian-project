@@ -11,10 +11,11 @@ import Testimonials from "../components/Testimonials";
 import CTA from "../components/CTA";
 import Footer from "../components/Footer";
 import EnquireModal from "@/components/EnquireModal";
+import { useState } from "react";
 
 export default function Home() {
   const [open, setOpen] = useState(false);
-  
+
   return (
     <>
       <Navbar openModal={() => setOpen(true)} />
