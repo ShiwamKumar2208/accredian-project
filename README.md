@@ -4,12 +4,6 @@
 
 [Live Demo on Vercel](https://accredian-project.vercel.app/)
 
-## 📦 Repository
-
-[Accredian Project](https://github.com/ShiwamKumar2208/accredian-project)
-
----
-
 ## 🧠 Approach
 
 The goal was to recreate the Accredian Enterprise landing page with a focus on clean structure, responsiveness, and component reusability rather than pixel-perfect duplication.
